@@ -32,6 +32,9 @@ Plugin 'valeriu-balaban/vimrc'
 " Smart togle line number
 Plugin 'b3niup/numbers.vim'
 
+" Writing plugins
+Plugin 'reedes/vim-pencil'
+
 call vundle#end()            " required
 
 filetype plugin indent on    " required
@@ -83,3 +86,5 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " Autodetect Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+let g:numbers_exclude = ['minibufexpl', 'nerdtree', 'unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'markdown']
